@@ -1,0 +1,132 @@
+.container {
+  padding-top: 5rem;
+  background-color: #E8E4DC;
+  min-height: 100vh;
+}
+
+.article {
+  max-width: 84rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.header {
+  max-width: 48rem;
+  margin: 0 auto 4rem;
+  background-color: #D4CFC5;
+  border: 1px solid #B8B2A7;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #2C2C2C;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #9C9487;
+  font-family: monospace;
+}
+
+.reviewer::before {
+  content: '✦';
+  color: #CF3B21;
+  font-size: 1rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.artworkContainer {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .artworkContainer {
+    position: sticky;
+    top: 8rem;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 4/3;
+  width: 100%;
+  border: 1px solid #B8B2A7;
+  overflow: hidden;
+}
+
+.artworkInfo {
+  margin-top: 1rem;
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #2C2C2C;
+  background-color: #D4CFC5;
+  padding: 0.75rem;
+  border: 1px solid #B8B2A7;
+}
+
+.artworkTitle {
+  font-style: italic;
+  color: #2C2C2C;
+}
+
+.artworkArtist {
+  color: #9C9487;
+}
+
+.reviewContent {
+  background-color: white;
+  padding: 2rem;
+  border: 1px solid #B8B2A7;
+  font-family: monospace;
+  line-height: 1.75;
+  color: #2C2C2C;
+}
+
+.reviewContent p {
+  margin-bottom: 1.5rem;
+}
+
+.reviewContent p:first-child::first-letter {
+  font-size: 3.5rem;
+  font-family: serif;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.75rem;
+}
+
+.draftMode {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  background-color: #FEF9C3;
+  color: #854D0E;
+  border-radius: 0.25rem;
+  text-align: center;
+  font-family: monospace;
+}

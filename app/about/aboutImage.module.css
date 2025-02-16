@@ -1,0 +1,79 @@
+.container {
+  position: relative;
+  cursor: pointer;
+}
+
+.imageContainer {
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.container:hover .image {
+  transform: scale(1.05);
+}
+
+.secureTag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #E8E4DC;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #B8B2A7;
+  font-family: monospace;
+  font-size: 0.875rem;
+  color: #CF3B21;
+  z-index: 1;
+}
+
+.hoverOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(44, 44, 44, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container:hover .hoverOverlay {
+  opacity: 1;
+}
+
+.statusIndicator {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #CF3B21;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.alertText {
+  color: #E8E4DC;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.instructionText {
+  font-family: monospace;
+  color: #9C9487;
+  font-size: 0.875rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}

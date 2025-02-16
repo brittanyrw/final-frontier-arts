@@ -1,0 +1,11 @@
+:root {
+  --black: #000000;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,197 @@
+.container {
+  background-color: #E8E4DC;
+  min-height: 100vh;
+  border-top: 1px solid #B8B2A7;
+}
+
+.wrapper {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.categoryWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.statusIndicator {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #CF3B21;
+  border-radius: 9999px;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.category {
+  font-size: 0.875rem;
+  color: #9C9487;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  color: #2C2C2C;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+  font-size: 0.875rem;
+  margin-bottom: 4rem;
+}
+
+.deploymentDate {
+  color: #9C9487;
+  letter-spacing: 0.05em;
+}
+
+.missionInfo {
+  text-align: right;
+}
+
+.missionCommand {
+  color: #CF3B21;
+  margin-bottom: 0.25rem;
+}
+
+.commander {
+  color: #2C2C2C;
+  font-weight: 700;
+}
+
+.description {
+  background-color: white;
+  border: 1px solid #B8B2A7;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.descriptionText {
+  font-family: monospace;
+  font-size: 1.125rem;
+  line-height: 1.625;
+}
+
+.descriptionText :global(p:first-child::first-letter) {
+  font-size: 4.5rem;
+  font-family: serif;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.75rem;
+}
+
+.artifactsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.headerLine {
+  height: 1px;
+  background-color: #B8B2A7;
+  flex-grow: 1;
+}
+
+.artifactsGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+}
+
+.artworkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.artworkContainer:hover {
+  transform: translateY(-0.25rem);
+}
+
+.firstArtwork {
+  grid-column: span 12;
+}
+
+.secondArtwork {
+  grid-column: span 7;
+}
+
+.thirdArtwork {
+  grid-column: span 5;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  overflow: hidden;
+  border: 1px solid #B8B2A7;
+}
+
+.image {
+  transition: transform 0.5s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageContainer:hover .image {
+  transform: scale(1.05);
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(44, 44, 44, 0);
+  transition: background-color 0.3s ease;
+}
+
+.imageContainer:hover .imageOverlay {
+  background-color: rgba(44, 44, 44, 0.1);
+}
+
+.artworkTitle {
+  font-family: monospace;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #2C2C2C;
+  padding-left: 0.25rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}

@@ -1,0 +1,415 @@
+.briefingsSectionTitle {
+  font-size: 1.875rem;
+  color: #2C2C2C;
+  font-weight: 700;
+}
+
+.statusIndicator {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  margin-right: 1rem;
+}
+
+.warning {
+  background-color: #CF3B21;
+}
+
+.success {
+  background-color: #4A7B3F;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+.heroWrapper {
+  background-color: #2C2C2C;
+  color: #E4E4D9;
+}
+
+.hero {
+  background-color: #D4CFC5;
+  border-bottom: 1px solid #B8B2A7;
+  position: relative;
+  overflow: hidden;
+}
+.controlProfile {
+  padding: 6rem 0;
+  background-color: #2C2C2C;
+}
+
+.controlContainer {
+  max-width: 84rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.controlGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: 84rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .controlGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.controlContent {
+  background-color: #D4CFC5;
+  border: 1px solid #B8B2A7;
+  padding: 2rem;
+  order: 2;
+}
+
+@media (min-width: 1024px) {
+  .controlContent {
+    order: 1;
+  }
+}
+
+.controlHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.controlTitle {
+  font-size: 1.875rem;
+  color: #2C2C2C;
+  font-weight: 700;
+}
+
+.controlInfo {
+  font-family: monospace;
+  color: #2C2C2C;
+  line-height: 1.625;
+  margin-bottom: 2rem;
+}
+
+.controlInfo p {
+  margin-bottom: 2rem;
+}
+
+.missionDirector {
+  color: #CF3B21;
+}
+
+.controlDescription {
+  max-width: none;
+  margin-bottom: 3rem;
+  font-family: monospace;
+  color: #2C2C2C;
+}
+
+.controlButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #9C9487;
+  color: white;
+  font-family: monospace;
+  border: 1px solid #B8B2A7;
+  transition: background-color 0.3s ease;
+}
+
+.controlButton:hover {
+  background-color: #847D73;
+}
+
+.controlArrow {
+  margin-left: 0.5rem;
+}
+
+.imageSection {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  border: 2px solid #B8B2A7;
+  overflow: hidden;
+  order: 1;
+}
+
+@media (min-width: 1024px) {
+  .imageSection {
+    order: 2;
+  }
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(44, 44, 44, 0.2);
+  z-index: 1;
+}
+
+.controlImage {
+  object-fit: cover;
+}
+
+.heroContent {
+  max-width: 48rem;
+  position: relative;
+  z-index: 10;
+  padding: 6rem 1rem;
+}
+
+.heroIndicator {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #CF3B21;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: #2C2C2C;
+  font-weight: 700;
+}
+
+.heroSubtitle {
+  font-family: monospace;
+  font-size: 1.25rem;
+  color: #2C2C2C;
+  margin-bottom: 2rem;
+}
+
+.heroButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #9C9487;
+  color: white;
+  font-family: monospace;
+  font-weight: 700;
+  border: 1px solid #B8B2A7;
+  transition: background-color 0.3s ease;
+}
+
+.heroButton:hover {
+  background-color: #847D73;
+}
+
+.heroImageContainer {
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.briefings {
+  padding: 6rem 0;
+  background-color: #2C2C2C;
+}
+
+.briefingsContainer {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.briefingsHeader {
+  background-color: #D4CFC5;
+  border: 1px solid #B8B2A7;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.briefingsTitle {
+  display: flex;
+  align-items: center;
+}
+
+.briefingsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .briefingsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.missionCard {
+  background-color: #E8E4DC;
+  border: 1px solid #B8B2A7;
+  overflow: hidden;
+  display: block;
+}
+
+.missionImageContainer {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-bottom: 1px solid #B8B2A7;
+}
+
+.missionImage {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.missionCard:hover .missionImage {
+  transform: scale(1.05);
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(44, 44, 44, 0);
+  transition: background-color 0.3s ease;
+}
+
+.missionCard:hover .imageOverlay {
+  background-color: rgba(44, 44, 44, 0.2);
+}
+
+.missionContent {
+  padding: 1.5rem;
+}
+
+.missionDates {
+  font-family: monospace;
+  font-size: 0.875rem;
+  color: #CF3B21;
+  margin-bottom: 0.75rem;
+}
+
+.missionName {
+  font-size: 1.25rem;
+  color: #2C2C2C;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.commander {
+  font-family: monospace;
+  color: #9C9487;
+  margin-bottom: 1rem;
+}
+
+.viewDetails {
+  display: inline-flex;
+  align-items: center;
+  font-family: monospace;
+  font-size: 0.875rem;
+  color: #CF3B21;
+}
+
+.detailsArrow {
+  margin-left: 0.5rem;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.missionCard:hover .detailsArrow {
+  transform: translateX(0.25rem);
+}
+
+.archive {
+  padding: 4rem 0;
+  background-color: #2C2C2C;
+  border-top: 2px solid #B8B2A7;
+  border-bottom: 2px solid #B8B2A7;
+}
+
+.archiveContainer {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.archiveHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.archiveStatus {
+  font-family: monospace;
+  color: #9C9487;
+}
+
+.archiveGrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.archiveItem {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.archiveName {
+  font-size: 2.25rem;
+  color: #D4CFC5;
+  transition: color 0.3s ease;
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .archiveName {
+    font-size: 3rem;
+  }
+}
+
+.archiveItem:hover .archiveName {
+  color: #E8E4DC;
+}
+
+.archiveStar {
+  color: #CF3B21;
+}
+
+.archiveImageContainer {
+  position: relative;
+  width: auto;
+  height: 60px;
+  min-width: 80px;
+  overflow: hidden;
+  border: 1px solid #B8B2A7;
+}
+
+.archiveImage {
+  object-fit: cover;
+}
+
+.archiveImageOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(44, 44, 44, 0.4);
+  transition: opacity 0.3s ease;
+}
+
+.archiveItem:hover .archiveImageOverlay {
+  opacity: 0;
+}

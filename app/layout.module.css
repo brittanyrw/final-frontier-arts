@@ -1,0 +1,105 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  background-color: #D4CFC5;
+  border-bottom: 1px solid #B8B2A7;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.navContent {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.statusIndicator::before {
+  content: '✦';
+  color: #CF3B21;
+  display: inline-block;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.logoLink {
+  color: #2C2C2C;
+  transition: color 0.2s;
+}
+
+.logoLink:hover {
+  color: #847D73;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  font-family: monospace;
+}
+
+.navLink {
+  padding: 0.25rem 0.5rem;
+  color: #2C2C2C;
+  transition: color 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.navLink:hover {
+  color: #847D73;
+  border-bottom: 2px solid #CF3B21;
+}
+
+.statusBox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: monospace;
+  font-size: 0.875rem;
+  background-color: #E8E4DC;
+  padding: 0.5rem 1rem;
+  border: 1px solid #B8B2A7;
+}
+
+.statusIndicatorOperational,
+.statusIndicatorOffline {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.statusIndicatorOperational {
+  background-color: #4A7B3F;
+}
+
+.statusIndicatorOffline {
+  background-color: #CF3B21;
+}
+
+.statusText {
+  color: #2C2C2C;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}

@@ -1,0 +1,165 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(44, 44, 44, 0.9);
+  backdrop-filter: blur(4px);
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.initialMessage {
+  max-width: 28rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: #D4CFC5;
+  border: 1px solid #B8B2A7;
+  border-radius: 2px;
+}
+
+.statusIndicator {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #CF3B21;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.initialTitle {
+  font-size: 1.5rem;
+  color: #2C2C2C;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.initialText {
+  color: #2C2C2C;
+  font-family: monospace;
+  margin-bottom: 1.5rem;
+}
+
+/* Command Message Styles */
+.commandOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(44, 44, 44, 0.9);
+  backdrop-filter: blur(8px);
+  z-index: 50;
+  overflow-y: auto;
+}
+
+.container {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.messageContainer {
+  background-color: #D4CFC5;
+  border: 1px solid #B8B2A7;
+  padding: 2rem;
+  border-radius: 2px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.statusHeader {
+  font-size: 0.875rem;
+  color: #CF3B21;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+}
+
+.statusText {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-family: monospace;
+}
+
+.messageBody {
+  background-color: #E8E4DC;
+  padding: 1rem;
+  border: 1px solid #B8B2A7;
+}
+
+.messageTitle {
+  font-size: 2rem;
+  color: #2C2C2C;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .messageTitle {
+    font-size: 2.5rem;
+  }
+}
+
+.messageText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #2C2C2C;
+  line-height: 1.625;
+  font-family: monospace;
+}
+
+.sender {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #CF3B21;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.button {
+  padding: 0.75rem 2rem;
+  font-family: monospace;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.confirmButton {
+  background-color: #9C9487;
+  color: white;
+  border: 1px solid #B8B2A7;
+}
+
+.confirmButton:hover {
+  background-color: #847D73;
+}
+
+.cancelButton {
+  border: 1px solid #9C9487;
+  color: #2C2C2C;
+}
+
+.cancelButton:hover {
+  background-color: rgba(156, 148, 135, 0.1);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}

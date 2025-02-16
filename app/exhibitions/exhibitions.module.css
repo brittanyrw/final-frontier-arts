@@ -1,0 +1,222 @@
+.container {
+  min-height: 100vh;
+  padding-top: 5rem;
+  background-color: #2C2C2C;
+}
+
+.wrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.header {
+  background-color: #D4CFC5;
+  border: 1px solid #B8B2A7;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.statusIndicator {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.statusIndicator.active {
+  background-color: #4A7B3F;
+}
+
+.statusIndicator.archived {
+  background-color: #9C9487;
+}
+
+.statusIndicator.warning {
+  background-color: #CF3B21;
+}
+
+.title {
+  font-size: 1.875rem;
+  color: #2C2C2C;
+  font-weight: 700;
+}
+
+.stats {
+  font-family: monospace;
+  color: #2C2C2C;
+  max-width: 32rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.sectionHeader {
+  background-color: #D4CFC5;
+  border: 1px solid #B8B2A7;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: #D4CFC5;
+  border: 1px solid #B8B2A7;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.card.archived {
+  opacity: 0.8;
+}
+
+.card.archived:hover {
+  opacity: 1;
+}
+
+.imageContainer {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-bottom: 1px solid #B8B2A7;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.archived .image {
+  filter: grayscale(1);
+}
+
+.archived:hover .image {
+  filter: grayscale(0);
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(44, 44, 44, 0);
+  transition: background-color 0.3s ease;
+}
+
+.card:hover .imageOverlay {
+  background-color: rgba(44, 44, 44, 0.2);
+}
+
+.statusBadge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #E8E4DC;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #B8B2A7;
+}
+
+.statusBadgeText {
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+
+.statusBadgeText.active {
+  color: #CF3B21;
+}
+
+.statusBadgeText.archived {
+  color: #9C9487;
+}
+
+.cardContent {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  color: #2C2C2C;
+  font-weight: 700;
+}
+
+.timeline {
+  font-family: monospace;
+  font-size: 0.875rem;
+  color: #9C9487;
+}
+
+.cardFooter {
+  padding-top: 1rem;
+  border-top: 1px solid #B8B2A7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.commander {
+  font-family: monospace;
+  color: #2C2C2C;
+}
+
+.accessLink {
+  font-family: monospace;
+  transition: transform 0.3s ease;
+}
+
+.accessLink.active {
+  color: #CF3B21;
+}
+
+.accessLink.archived {
+  color: #9C9487;
+}
+
+.card:hover .accessLink {
+  transform: translateX(0.5rem);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
