@@ -1,8 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { Space_Mono } from 'next/font/google'
+import ReactMarkdown from 'react-markdown'
 import styles from './clueInterface.module.css'
 
 const spaceMono = Space_Mono({ 
@@ -16,6 +17,7 @@ interface Clue {
   clueDescription: string
   hint: string
   clueCode: string
+  description: string
 }
 
 interface ClueVerificationProps {
@@ -70,7 +72,7 @@ function ClueVerification({ clueNumber, clueCode, hint, onStatusChange }: ClueVe
           className={styles.hintButton}
         >
           <span className={styles.hintIndicator}></span>
-          REQUEST ASSISTANCE
+          REQUEST HINT
         </button>
         
         {showHint && (
@@ -110,12 +112,16 @@ export default function ClueInterface({ clues }: ClueInterfaceProps) {
     }
   }, [verifiedClues, clues])
 
+  const isClueVisible = (clueNumber: number) => {
+    if (clueNumber === 1) return true
+    return verifiedClues[clueNumber - 1] === true
+  }
+
   const finalCode = clues.map(clue => clue.clueCode).join('')
 
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        {/* Header */}
         <div className={styles.header}>
           <div className={styles.statusIndicator}></div>
           <h1 className={`${spaceMono.className} ${styles.title}`}>
@@ -124,42 +130,50 @@ export default function ClueInterface({ clues }: ClueInterfaceProps) {
           <p className={styles.subtitle}>
             DECODE SEQUENCE MARKERS TO ACCESS SECURE ARTWORK DATA
           </p>
+          <p>Remember, follow the clues. Each clue will give you a code and the next clue. Enter the codes below to confirm that you are on the right track.</p>
         </div>
 
         <div className={styles.timelineContainer}>
           <div className={styles.timelineLine} />
 
           <div className={styles.timelineContent}>
-            {clues.map((clue) => (
-              <motion.div
-                key={clue.clueNumber}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: clue.clueNumber * 0.1 }}
-                className={styles.clueItem}
-              >
-                <div className={`${styles.timelineMarker} ${
-                  verifiedClues[clue.clueNumber] ? styles.markerVerified : styles.markerPending
-                }`}>
-                  {clue.clueNumber}
-                </div>
+            <AnimatePresence>
+              {clues.map((clue) => (
+                isClueVisible(clue.clueNumber) && (
+                  <motion.div
+                    key={clue.clueNumber}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -20 }}
+                    transition={{ delay: 0.2 }}
+                    className={styles.clueItem}
+                  >
+                    <div className={`${styles.timelineMarker} ${
+                      verifiedClues[clue.clueNumber] ? styles.markerVerified : styles.markerPending
+                    }`}>
+                      {clue.clueNumber}
+                    </div>
 
-                <div className={styles.clueContent}>
-                  <h2 className={`${spaceMono.className} ${styles.clueTitle}`}>
-                    {clue.clueTitle}
-                  </h2>
-                  <p className={styles.clueDescription}>
-                    {clue.clueDescription}
-                  </p>
-                  <ClueVerification 
-                    clueNumber={clue.clueNumber}
-                    clueCode={clue.clueCode}
-                    hint={clue.hint}
-                    onStatusChange={handleClueStatusChange}
-                  />
-                </div>
-              </motion.div>
-            ))}
+                    <div className={styles.clueContent}>
+                      <h2 className={`${spaceMono.className} ${styles.clueTitle}`}>
+                        {clue.clueTitle}
+                      </h2>
+                      <div className={styles.clueDescription}>
+                        <ReactMarkdown>
+                          {clue.description}
+                        </ReactMarkdown>
+                      </div>
+                      <ClueVerification 
+                        clueNumber={clue.clueNumber}
+                        clueCode={clue.clueCode}
+                        hint={clue.hint}
+                        onStatusChange={handleClueStatusChange}
+                      />
+                    </div>
+                  </motion.div>
+                )
+              ))}
+            </AnimatePresence>
           </div>
         </div>
 

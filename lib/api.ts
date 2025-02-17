@@ -204,6 +204,7 @@ export async function getClues(preview = false) {
           clueDescription
           hint
           clueCode
+          description
         }
       }
     }

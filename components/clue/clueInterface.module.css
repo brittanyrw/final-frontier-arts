@@ -117,6 +117,67 @@
   line-height: 1.625;
 }
 
+.clueDescription p {
+  margin-bottom: 1rem;
+}
+
+.clueDescription p:last-child {
+  margin-bottom: 0;
+}
+
+.clueDescription a {
+  color: #CF3B21;
+  text-decoration: underline;
+}
+
+.clueDescription a:hover {
+  color: #A62E1A;
+}
+
+.clueDescription strong {
+  font-weight: 700;
+}
+
+.clueDescription em {
+  font-style: italic;
+}
+
+.clueDescription ul, .clueDescription ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.clueDescription li {
+  margin-bottom: 0.5rem;
+}
+
+.clueDescription code {
+  background-color: #E8E4DC;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+}
+
+.clueDescription pre {
+  background-color: #E8E4DC;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+}
+
+.clueDescription pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.clueDescription blockquote {
+  border-left: 4px solid #B8B2A7;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #6C6359;
+}
+
 .verificationWrapper {
   display: flex;
   flex-direction: column;
