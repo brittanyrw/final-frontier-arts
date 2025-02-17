@@ -7,7 +7,6 @@ const EXHIBITION_GRAPHQL_FIELDS = `
   description {
     json
   }
-  categories
   artist {
     name
   }

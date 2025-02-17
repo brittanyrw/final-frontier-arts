@@ -28,11 +28,10 @@ export default async function HomePage() {
         <div className={styles.heroContent}>
             <div className={styles.heroIndicator}></div>
             <h1 className={`${spaceMono.className} ${styles.heroTitle}`}>
-              Surface Area:<br/>
-              Planetary land collection
+              {hero?.title}
             </h1>
             <p className={styles.heroSubtitle}>
-              Exploring the universe through the arts
+              {hero?.subtitle}
             </p>
             <Link href="/exhibitions" className={styles.heroButton}>
               View Exhibitions

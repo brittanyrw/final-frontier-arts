@@ -7,7 +7,6 @@ export interface Exhibition {
   description: {
     json: any
   }
-  categories: string[]
   artist: {
     name: string
   }
