@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background-color: #2C2C2C;
+  background-color: var(--black);
   color: white;
   padding-top: 5rem;
 }
@@ -24,7 +24,7 @@
 
 .intro {
   font-size: 1.25rem;
-  color: #D4CFC5;
+  color: var(--tan);
   margin-bottom: 3rem;
   max-width: 32rem;
   margin-left: auto;
@@ -34,8 +34,8 @@
 
 .revealButton {
   padding: 0.75rem 2rem;
-    background-color: #D4CFC5;
-    color: #2C2C2C;
+    background-color: var(--tan);
+    color: var(--black);
     font-family: monospace;
     text-transform: uppercase;
     font-size: 1.125rem;
@@ -69,7 +69,7 @@
   width: 345px;
   height: 447px;
   margin: auto;
-  background-color: black;
+  background-color: var(--black);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 

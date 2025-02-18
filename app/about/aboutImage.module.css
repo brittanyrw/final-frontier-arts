@@ -21,12 +21,12 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background-color: #E8E4DC;
+  background-color: var(--light-tan);
   padding: 0.25rem 0.75rem;
-  border: 1px solid #B8B2A7;
+  border: 1px solid var(--med-tan);
   font-family: monospace;
   font-size: 0.875rem;
-  color: #CF3B21;
+  color: var(--red);
   z-index: 1;
 }
 
@@ -50,14 +50,14 @@
   display: inline-block;
   width: 0.75rem;
   height: 0.75rem;
-  background-color: #CF3B21;
+  background-color: var(--red);
   border-radius: 50%;
   margin-bottom: 1rem;
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .alertText {
-  color: #E8E4DC;
+  color: var(--light-tan);
   font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -65,7 +65,7 @@
 
 .instructionText {
   font-family: monospace;
-  color: #9C9487;
+  color: var(--middle-tan);
   font-size: 0.875rem;
 }
 

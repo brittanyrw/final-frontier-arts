@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background-color: #2C2C2C;
+  background-color: var(--black);
 }
 
 .heroContainer {

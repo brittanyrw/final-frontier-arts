@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background-color: #2C2C2C;
+  background-color: var(--black);
   padding-top: 6rem;
 }
 
@@ -16,8 +16,8 @@
 }
 
 .header {
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   padding: 2rem;
   margin-bottom: 2rem;
 }
@@ -33,20 +33,20 @@
   display: inline-block;
   width: 0.75rem;
   height: 0.75rem;
-  background-color: #CF3B21;
+  background-color: var(--red);
   border-radius: 50%;
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .title {
   font-size: 1.875rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-weight: 700;
 }
 
 .subtitle {
   font-family: monospace;
-  color: #605b55;
+  color: var(--dark-tan);
 }
 
 .grid {
@@ -61,15 +61,15 @@
 }
 
 .imageSection {
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   padding: 1rem;
 }
 
 .classifiedTag {
   font-family: monospace;
   font-size: 0.875rem;
-  color: #605b55;
+  color: var(--dark-tan);
   margin-top: 1rem;
   display: flex;
   align-items: center;
@@ -79,19 +79,19 @@
 .classifiedDot {
   width: 0.25rem;
   height: 0.25rem;
-  background-color: #CF3B21;
+  background-color: var(--red);
   border-radius: 50%;
 }
 
 .bioSection {
   background-color: white;
-  border: 1px solid #B8B2A7;
+  border: 1px solid var(--med-tan);
   padding: 2rem;
 }
 
 .bioText {
   font-family: monospace;
-  color: #2C2C2C;
+  color: var(--black);
   white-space: pre-wrap;
   line-height: 1.625;
 }
@@ -99,20 +99,20 @@
 .errorContainer {
   max-width: 64rem;
   margin: 0 auto;
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   padding: 2rem;
 }
 
 .errorTitle {
   font-size: 1.875rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-weight: 700;
 }
 
 .errorMessage {
   font-family: monospace;
-  color: #2C2C2C;
+  color: var(--black);
 }
 
 @keyframes pulse {

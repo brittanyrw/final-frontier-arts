@@ -155,9 +155,6 @@ export async function getPreviewExhibitionBySlug(slug: string) {
 }
 
 export async function getReviewBySlug(slug: string, preview = false) {
-  // Add this line for debugging
-  console.log('getReviewBySlug called with preview:', preview);
-  
   const query = `query {
     criticReviewCollection(
       where: { slug: "${slug}" }
@@ -168,14 +165,8 @@ export async function getReviewBySlug(slug: string, preview = false) {
         ${REVIEW_GRAPHQL_FIELDS}
       }
     }
-  }`;
-
-  console.log('Executing query:', query);
-  
-  const entry = await fetchGraphQL(query, preview);
-  
-  console.log('Review response:', entry);
-  
+  }`;  
+  const entry = await fetchGraphQL(query, preview);  
   return extractReview(entry);
 }
 

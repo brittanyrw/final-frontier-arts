@@ -1,6 +1,6 @@
 .container {
   padding-top: 5rem;
-  background-color: #E8E4DC;
+  background-color: var(--light-tan);
   min-height: 100vh;
 }
 
@@ -13,8 +13,8 @@
 .header {
   max-width: 48rem;
   margin: 0 auto 4rem;
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   padding: 2rem;
 }
 
@@ -22,7 +22,7 @@
   font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-family: 'Space Mono', monospace;
   font-weight: 700;
 }
@@ -37,13 +37,13 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: #605b55;
+  color: var(--dark-tan);
   font-family: monospace;
 }
 
 .reviewer::before {
   content: '✦';
-  color: #CF3B21;
+  color: var(--red);
   font-size: 1rem;
 }
 
@@ -79,7 +79,7 @@
   position: relative;
   aspect-ratio: 4/3;
   width: 100%;
-  border: 1px solid #B8B2A7;
+  border: 1px solid var(--med-tan);
   overflow: hidden;
 }
 
@@ -89,28 +89,28 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: #2C2C2C;
-  background-color: #D4CFC5;
+  color: var(--black);
+  background-color: var(--tan);
   padding: 0.75rem;
-  border: 1px solid #B8B2A7;
+  border: 1px solid var(--med-tan);
 }
 
 .artworkTitle {
   font-style: italic;
-  color: #2C2C2C;
+  color: var(--black);
 }
 
 .artworkArtist {
-  color: #605b55;
+  color: var(--dark-tan);
 }
 
 .reviewContent {
   background-color: white;
   padding: 2rem;
-  border: 1px solid #B8B2A7;
+  border: 1px solid var(--med-tan);
   font-family: monospace;
   line-height: 1.75;
-  color: #2C2C2C;
+  color: var(--black);
 }
 
 .reviewContent p {

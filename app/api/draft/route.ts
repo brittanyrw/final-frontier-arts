@@ -7,13 +7,6 @@ export async function GET(request: Request) {
   const slug = searchParams.get('slug');
   const contentType = searchParams.get('contentType');
 
-  console.log('Received preview request:', {
-    secret: secret ? 'exists' : 'missing',
-    path,
-    slug,
-    contentType
-  });
-
   if (!process.env.CONTENTFUL_PREVIEW_SECRET) {
     return new Response('Missing CONTENTFUL_PREVIEW_SECRET', { status: 500 });
   }

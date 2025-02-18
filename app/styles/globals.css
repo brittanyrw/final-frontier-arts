@@ -1,15 +1,13 @@
-/* CSS Reset and Base Styles */
 :root {
-  --primary: #CF3B21;
-  --secondary: #4A7B3F;
-  --tertiary: #2B5F9D;
-  --background: #2C2C2C;
-  --surface: #D4CFC5;
-  --surface-variant: #E8E4DC;
-  --border: #B8B2A7;
-  --text: #2C2C2C;
-  --text-secondary: #9C9487;
-  --max-width: 1200px;
+  --red: #CF3B21;
+  --green: #4A7B3F;
+  --blue: #1a4d89;
+  --black: #2C2C2C;
+  --tan: #D4CFC5;
+  --light-tan: #E8E4DC;
+  --med-tan: #B8B2A7;
+  --dark-tan: #605b55;
+  --middle-tan: #9C9487;
 }
 
 * {
@@ -27,10 +25,10 @@ body {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: monospace, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
-  color: var(--text);
-  background-color: var(--background);
+  color: var(--black);
+  background-color: var(--black);
 }
 
 a {
@@ -46,14 +44,12 @@ button {
   font: inherit;
 }
 
-/* Utility Classes */
 .container {
-  max-width: var(--max-width);
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* Common Animation */
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
@@ -63,7 +59,6 @@ button {
   }
 }
 
-/* Accessibility */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -76,8 +71,7 @@ button {
   border: 0;
 }
 
-/* Focus Styles */
 :focus-visible {
-  outline: 2px solid var(--primary);
+  outline: 2px solid var(--red);
   outline-offset: 2px;
 }

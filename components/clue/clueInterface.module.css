@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background-color: #2C2C2C;
+  background-color: var(--black);
 }
 
 .wrapper {
@@ -12,8 +12,8 @@
 .header {
   text-align: center;
   margin-bottom: 4rem;
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   padding: 2rem;
   margin-top: 4rem;
 }
@@ -28,7 +28,7 @@
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  background-color: #CF3B21;
+  background-color: var(--red);
   border-radius: 50%;
   margin-bottom: 1rem;
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -38,13 +38,13 @@
 .title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-weight: 700;
   letter-spacing: 0.05em;
 }
 
 .subtitle {
-  color: #2C2C2C;
+  color: var(--black);
   font-family: monospace;
   max-width: 32rem;
   margin: 0 auto;
@@ -62,7 +62,7 @@
   top: 2rem;
   bottom: 0;
   width: 1px;
-  background-color: #B8B2A7;
+  background-color: var(--med-tan);
 }
 
 .timelineContent {
@@ -93,34 +93,34 @@
 }
 
 .markerVerified {
-  border-color: #CF3B21;
-  background-color: #CF3B21;
+  border-color: var(--red);
+  background-color: var(--red);
   color: white;
 }
 
 .markerPending {
-  border-color: #605b55;
-  background-color: #E8E4DC;
-  color: #605b55;
+  border-color: var(--dark-tan);
+  background-color: var(--light-tan);
+  color: var(--dark-tan);
 }
 
 .clueContent {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   padding: 1.5rem;
 }
 
 .clueTitle {
   font-size: 1.5rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-weight: 700;
 }
 
 .clueDescription {
-  color: #2C2C2C;
+  color: var(--black);
   font-family: monospace;
   line-height: 1.625;
 }
@@ -134,7 +134,7 @@
 }
 
 .clueDescription a {
-  color: #CF3B21;
+  color: var(--red);
   text-decoration: underline;
 }
 
@@ -160,7 +160,7 @@
 }
 
 .clueDescription code {
-  background-color: #E8E4DC;
+  background-color: var(--light-tan);
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
   font-family: monospace;
@@ -170,7 +170,7 @@
   display: inline-block;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background-color: #4A7B3F;
+  background-color: var(--green);
   color: white;
   font-family: monospace;
   font-size: 0.875rem;
@@ -183,7 +183,7 @@
 }
 
 .clueDescription pre {
-  background-color: #E8E4DC;
+  background-color: var(--light-tan);
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 0.25rem;
@@ -196,7 +196,7 @@
 }
 
 .clueDescription blockquote {
-  border-left: 4px solid #B8B2A7;
+  border-left: 4px solid var(--med-tan);
   padding-left: 1rem;
   margin: 1rem 0;
   color: #6C6359;
@@ -216,32 +216,32 @@
 
 .sequenceInput {
   padding: 0.5rem 1rem;
-  background-color: #E8E4DC;
-  border: 1px solid #B8B2A7;
-  color: #2C2C2C;
+  background-color: var(--light-tan);
+  border: 1px solid var(--med-tan);
+  color: var(--black);
   font-family: monospace;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .sequenceInput::placeholder {
-  color: #9C9487;
+  color: var(--middle-tan);
 }
 
 .sequenceInput:focus {
   outline: none;
-  border-color: #CF3B21;
+  border-color: var(--red);
 }
 
 .verifyButton {
   padding: 0.5rem 1.5rem;
-  background-color: #9C9487;
+  background-color: var(--middle-tan);
   color: white;
   font-family: monospace;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border: 1px solid #B8B2A7;
+  border: 1px solid var(--med-tan);
   transition: background-color 0.2s;
 }
 
@@ -256,11 +256,11 @@
 }
 
 .statusSuccess {
-  color: #4A7B3F;
+  color: var(--green);
 }
 
 .statusError {
-  color: #CF3B21;
+  color: var(--red);
 }
 
 .hintSection {
@@ -269,7 +269,7 @@
 
 .hintButton {
   font-size: 0.875rem;
-  color: #CF3B21;
+  color: var(--red);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -285,7 +285,7 @@
   display: inline-block;
   width: 0.5rem;
   height: 0.5rem;
-  background-color: #CF3B21;
+  background-color: var(--red);
   border-radius: 50%;
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -293,12 +293,12 @@
 .hintContent {
   margin-top: 0.75rem;
   padding-left: 1rem;
-  border-left: 2px solid #B8B2A7;
+  border-left: 2px solid var(--med-tan);
 }
 
 .hintText {
   font-size: 0.875rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-family: monospace;
 }
 
@@ -308,14 +308,14 @@
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
-  background-color: #E8E4DC;
-  border: 2px solid #4a7b3f;
+  background-color: var(--light-tan);
+  border: 2px solid var(--green);
 }
 
 .completionTitle {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-weight: 700;
 }
 
@@ -323,26 +323,27 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .codeText {
   font-size: 1.5rem;
   font-family: monospace;
-  color: #2C2C2C;
+  color: var(--black);
   letter-spacing: 0.1em;
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   padding: 0.5rem 1rem;
 }
 
 .copyButton {
   padding: 0.5rem 1rem;
-  background-color: #9C9487;
+  background-color: var(--middle-tan);
   color: white;
   font-size: 0.875rem;
   font-family: monospace;
   font-weight: 700;
-  border: 1px solid #B8B2A7;
+  border: 1px solid var(--med-tan);
   transition: background-color 0.2s;
 }
 
@@ -350,16 +351,19 @@
   background-color: #847D73;
 }
 
-.completionStatus {
-  margin-top: 1rem;
-  color: #605b55;
+.completionStatus, .completionHint {
+  color: var(--dark-tan);
   font-family: monospace;
+}
+
+.completionStatus {
+  margin-bottom: 1rem;
 }
 
 .instructions {
   margin-top: 4rem;
   text-align: center;
-  color: #9C9487;
+  color: var(--middle-tan);
   max-width: 32rem;
   margin-left: auto;
   margin-right: auto;

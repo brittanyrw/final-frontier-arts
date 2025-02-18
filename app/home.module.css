@@ -1,6 +1,6 @@
 .briefingsSectionTitle {
   font-size: 1.875rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-weight: 700;
   margin: 0;
   text-transform: uppercase;
@@ -16,11 +16,11 @@
 }
 
 .warning {
-  background-color: #CF3B21;
+  background-color: var(--red);
 }
 
 .success {
-  background-color: #4A7B3F;
+  background-color: var(--green);
 }
 
 @keyframes pulse {
@@ -33,19 +33,19 @@
 }
 
 .heroWrapper {
-  background-color: #2C2C2C;
+  background-color: var(--black);
   color: #E4E4D9;
 }
 
 .hero {
-  background-color: #D4CFC5;
-  border-bottom: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border-bottom: 1px solid var(--med-tan);
   position: relative;
   overflow: hidden;
 }
 .controlProfile {
   padding: 6rem 0;
-  background-color: #2C2C2C;
+  background-color: var(--black);
 }
 
 .controlContainer {
@@ -70,8 +70,8 @@
 }
 
 .controlContent {
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   padding: 2rem;
   order: 2;
   font-size: 1rem;
@@ -92,13 +92,13 @@
 
 .controlTitle {
   font-size: 1.875rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-weight: 700;
 }
 
 .controlInfo {
   font-family: monospace;
-  color: #2C2C2C;
+  color: var(--black);
   line-height: 1.625;
   margin-bottom: 2rem;
 }
@@ -108,24 +108,24 @@
 }
 
 .missionDirector {
-  color: #CF3B21;
+  color: var(--red);
 }
 
 .controlDescription {
   max-width: none;
   margin-bottom: 3rem;
   font-family: monospace;
-  color: #2C2C2C;
+  color: var(--black);
 }
 
 .controlButton {
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  background-color: #605b55;
+  background-color: var(--dark-tan);
   color: white;
   font-family: monospace;
-  border: 1px solid #B8B2A7;
+  border: 1px solid var(--med-tan);
   transition: background-color 0.3s ease;
 }
 
@@ -141,7 +141,7 @@
   position: relative;
   height: 600px;
   width: 100%;
-  border: 2px solid #B8B2A7;
+  border: 2px solid var(--med-tan);
   overflow: hidden;
   order: 1;
 }
@@ -176,7 +176,7 @@
   margin-right: 30px;
   width: 40px;
   height: 24px;
-  background-color: #CF3B21;
+  background-color: var(--red);
   border-radius: 50%;
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -185,14 +185,14 @@
   font-size: 3.5rem;
   line-height: 1.2;
   margin-bottom: 2rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-weight: 700;
 }
 
 .heroSubtitle {
   font-family: monospace;
   font-size: 1.25rem;
-  color: #2C2C2C;
+  color: var(--black);
   margin-bottom: 2rem;
 }
 
@@ -200,7 +200,7 @@
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  background-color: #CF3B21;
+  background-color: var(--red);
   color: white;
   font-size: 1.2rem;
   font-family: monospace;
@@ -210,7 +210,7 @@
 }
 
 .heroButton:hover {
-  background-color: #2C2C2C;
+  background-color: var(--black);
 }
 
 .heroImageContainer {
@@ -225,7 +225,7 @@
 
 .briefings {
   padding: 6rem 0;
-  background-color: #2C2C2C;
+  background-color: var(--black);
 }
 
 .briefingsContainer {
@@ -235,8 +235,8 @@
 }
 
 .briefingsHeader {
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   padding: 2rem;
   margin-bottom: 4rem;
 }
@@ -259,8 +259,8 @@
 }
 
 .missionCard {
-  background-color: #E8E4DC;
-  border: 1px solid #B8B2A7;
+  background-color: var(--light-tan);
+  border: 1px solid var(--med-tan);
   overflow: hidden;
   display: block;
 }
@@ -269,7 +269,7 @@
   position: relative;
   aspect-ratio: 1;
   overflow: hidden;
-  border-bottom: 1px solid #B8B2A7;
+  border-bottom: 1px solid var(--med-tan);
 }
 
 .missionImage {
@@ -299,21 +299,21 @@
 .missionDates {
   font-family: monospace;
   font-size: 0.875rem;
-  color: #CF3B21;
+  color: var(--red);
   margin-bottom: 0.75rem;
   text-transform: uppercase;
 }
 
 .missionName {
   font-size: 1.25rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .commander {
   font-family: monospace;
-  color: #605b55;
+  color: var(--dark-tan);
   margin-bottom: 1rem;
 }
 
@@ -322,7 +322,7 @@
   align-items: center;
   font-family: monospace;
   font-size: 0.875rem;
-  color: #CF3B21;
+  color: var(--red);
 }
 
 .detailsArrow {
@@ -337,9 +337,9 @@
 
 .archive {
   padding: 4rem 0;
-  background-color: #2C2C2C;
-  border-top: 2px solid #B8B2A7;
-  border-bottom: 2px solid #B8B2A7;
+  background-color: var(--black);
+  border-top: 2px solid var(--med-tan);
+  border-bottom: 2px solid var(--med-tan);
 }
 
 .archiveContainer {
@@ -377,7 +377,7 @@
 
 .archiveName {
   font-size: 2.25rem;
-  color: #D4CFC5;
+  color: var(--tan);
   transition: color 0.3s ease;
   font-family: monospace;
   white-space: nowrap;
@@ -390,7 +390,7 @@
 }
 
 .archiveItem:hover .archiveName {
-  color: #E8E4DC;
+  color: var(--light-tan);
 }
 
 .archiveStar {
@@ -403,7 +403,7 @@
   height: 60px;
   min-width: 80px;
   overflow: hidden;
-  border: 1px solid #B8B2A7;
+  border: 1px solid var(--med-tan);
 }
 
 .archiveImage {

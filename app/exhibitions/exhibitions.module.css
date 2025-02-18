@@ -1,7 +1,7 @@
 .container {
   min-height: 100vh;
   padding-top: 5rem;
-  background-color: #2C2C2C;
+  background-color: var(--black);
 }
 
 .wrapper {
@@ -11,8 +11,8 @@
 }
 
 .header {
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   padding: 2rem;
   margin-bottom: 4rem;
 }
@@ -33,26 +33,26 @@
 }
 
 .statusIndicator.active {
-  background-color: #4A7B3F;
+  background-color: var(--green);
 }
 
 .statusIndicator.archived {
-  background-color: #9C9487;
+  background-color: var(--middle-tan);
 }
 
 .statusIndicator.warning {
-  background-color: #CF3B21;
+  background-color: var(--red);
 }
 
 .title {
   font-size: 1.875rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-weight: 700;
 }
 
 .stats {
   font-family: monospace;
-  color: #2C2C2C;
+  color: var(--black);
   max-width: 32rem;
 }
 
@@ -61,8 +61,8 @@
 }
 
 .sectionHeader {
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   padding: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -93,8 +93,8 @@
 }
 
 .card {
-  background-color: #D4CFC5;
-  border: 1px solid #B8B2A7;
+  background-color: var(--tan);
+  border: 1px solid var(--med-tan);
   overflow: hidden;
   transition: opacity 0.3s ease;
 }
@@ -110,7 +110,7 @@
 .imageContainer {
   position: relative;
   aspect-ratio: 4/3;
-  border-bottom: 1px solid #B8B2A7;
+  border-bottom: 1px solid var(--med-tan);
   overflow: hidden;
 }
 
@@ -146,9 +146,9 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background-color: #E8E4DC;
+  background-color: var(--light-tan);
   padding: 0.25rem 0.75rem;
-  border: 1px solid #B8B2A7;
+  border: 1px solid var(--med-tan);
 }
 
 .statusBadgeText {
@@ -157,11 +157,11 @@
 }
 
 .statusBadgeText.active {
-  color: #CF3B21;
+  color: var(--red);
 }
 
 .statusBadgeText.archived {
-  color: #9C9487;
+  color: var(--middle-tan);
 }
 
 .cardContent {
@@ -173,19 +173,19 @@
 
 .cardTitle {
   font-size: 1.25rem;
-  color: #2C2C2C;
+  color: var(--black);
   font-weight: 700;
 }
 
 .timeline {
   font-family: monospace;
   font-size: 0.875rem;
-  color: #605b55;
+  color: var(--dark-tan);
 }
 
 .cardFooter {
   padding-top: 1rem;
-  border-top: 1px solid #B8B2A7;
+  border-top: 1px solid var(--med-tan);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -193,7 +193,7 @@
 
 .commander {
   font-family: monospace;
-  color: #2C2C2C;
+  color: var(--black);
 }
 
 .accessLink {
@@ -202,11 +202,11 @@
 }
 
 .accessLink.active {
-  color: #CF3B21;
+  color: var(--red);
 }
 
 .accessLink.archived {
-  color: #9C9487;
+  color: var(--middle-tan);
 }
 
 .card:hover .accessLink {

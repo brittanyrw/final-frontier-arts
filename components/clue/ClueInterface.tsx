@@ -211,6 +211,8 @@ export default function ClueInterface({ clues }: ClueInterfaceProps) {
             <p className={styles.completionStatus}>
               STANDBY FOR FINAL SEQUENCE VALIDATION...
             </p>
+            <p className={styles.completionHint}>Final Hint: What happens if you go to...</p>
+            <p className={styles.completionHint}>final-frontier-arts.vercel.app/the_code_that_you_created</p>
           </motion.div>
         )}
 
