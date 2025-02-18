@@ -1,8 +1,8 @@
 .nav {
   position: fixed;
   width: 100%;
-  background-color: #D4CFC5;
-  border-bottom: 1px solid #B8B2A7;
+  background-color: #1a4d89;
+  border-bottom: 4px solid #2C2C2C;
   z-index: 50;
 }
 
@@ -29,20 +29,20 @@
 
 .statusIndicator::before {
   content: '✦';
-  color: #CF3B21;
+  color: gold;
   display: inline-block;
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  font-size: 1.25rem;
+  font-size: 2rem;
   line-height: 1;
 }
 
 .logoLink {
-  color: #2C2C2C;
+  color: white;
   transition: color 0.2s;
 }
 
 .logoLink:hover {
-  color: #847D73;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .navLinks {
@@ -53,13 +53,13 @@
 
 .navLink {
   padding: 0.25rem 0.5rem;
-  color: #2C2C2C;
+  color: white;
   transition: color 0.2s;
   border-bottom: 2px solid transparent;
 }
 
 .navLink:hover {
-  color: #847D73;
+  color: rgba(255, 255, 255, 0.8);
   border-bottom: 2px solid #CF3B21;
 }
 
@@ -69,9 +69,9 @@
   gap: 0.75rem;
   font-family: monospace;
   font-size: 0.875rem;
-  background-color: #E8E4DC;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 0.5rem 1rem;
-  border: 1px solid #B8B2A7;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .statusIndicatorOperational,
@@ -84,7 +84,7 @@
 }
 
 .statusIndicatorOperational {
-  background-color: #4A7B3F;
+  background-color: white;
 }
 
 .statusIndicatorOffline {
@@ -92,7 +92,8 @@
 }
 
 .statusText {
-  color: #2C2C2C;
+  color: white;
+  margin: 0;
 }
 
 @keyframes pulse {

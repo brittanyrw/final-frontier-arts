@@ -158,6 +158,22 @@
   font-family: monospace;
 }
 
+.documentationLink {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4A7B3F;
+  color: white;
+  font-family: monospace;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.documentationLink:hover {
+  background-color: #3A6A2F;
+}
+
 .clueDescription pre {
   background-color: #E8E4DC;
   padding: 1rem;

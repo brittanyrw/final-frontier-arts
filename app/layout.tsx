@@ -27,7 +27,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body style={{ backgroundColor: '#2C2C2C' }}>
+      <body>
         <ContentfulLivePreviewProvider>
           <nav className={styles.nav}>
             <div className={styles.container}>

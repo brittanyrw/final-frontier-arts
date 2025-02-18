@@ -1,13 +1,3 @@
-.hidden {
-  display: none !important;
-}
-
-/* Base cursor style */
-* {
-  cursor: url('/arrow-cursor.svg'), auto;
-}
-
-/* Color Variables */
 :root {
   --color-background: #2C2C2C;
   --color-surface: #D4CFC5;
@@ -21,7 +11,6 @@
   --color-success: #4A7B3F;
 }
 
-/* Common Animations */
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
@@ -31,14 +20,12 @@
   }
 }
 
-/* Layout */
 .container {
   max-width: 72rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* Status Indicators */
 .status-indicator {
   display: inline-block;
   width: 0.75rem;
@@ -55,7 +42,6 @@
   background-color: var(--color-success);
 }
 
-/* Typography */
 .mono {
   font-family: monospace;
 }
@@ -64,7 +50,6 @@
   color: var(--color-text-secondary);
 }
 
-/* Buttons */
 .button {
   display: inline-flex;
   align-items: center;
@@ -83,7 +68,6 @@
   background-color: var(--color-button-hover);
 }
 
-/* Image Containers */
 .image-container {
   position: relative;
   overflow: hidden;
@@ -97,7 +81,6 @@
   transform: scale(1.05);
 }
 
-/* Panel Styles */
 .panel {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -108,7 +91,6 @@
   background-color: var(--color-surface-light);
 }
 
-/* Common Utilities */
 .flex {
   display: flex;
 }
@@ -127,4 +109,8 @@
 
 .gap-4 {
   gap: 1rem;
+}
+
+.hidden {
+  display: none !important;
 }

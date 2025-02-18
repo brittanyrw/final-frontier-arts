@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Space_Mono } from 'next/font/google'
 import ReactMarkdown from 'react-markdown'
 import styles from './clueInterface.module.css'
+import Link from 'next/link'
 
 const spaceMono = Space_Mono({ 
   weight: ['400', '700'],
@@ -18,16 +19,18 @@ interface Clue {
   hint: string
   clueCode: string
   description: string
+  documentation?: string
 }
 
 interface ClueVerificationProps {
   clueNumber: number
   clueCode: string
   hint: string
+  documentation?: string
   onStatusChange: (clueNumber: number, isCorrect: boolean) => void
 }
 
-function ClueVerification({ clueNumber, clueCode, hint, onStatusChange }: ClueVerificationProps) {
+function ClueVerification({ clueNumber, clueCode, hint, documentation, onStatusChange }: ClueVerificationProps) {
   const [input, setInput] = useState('')
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [showHint, setShowHint] = useState(false)
@@ -83,6 +86,11 @@ function ClueVerification({ clueNumber, clueCode, hint, onStatusChange }: ClueVe
             className={styles.hintContent}
           >
             <p className={styles.hintText}>{hint}</p>
+            {documentation && (
+              <Link href={documentation} target="_blank" className={styles.documentationLink}>
+                View Documentation
+              </Link>
+            )}
           </motion.div>
         )}
       </div>
@@ -167,6 +175,7 @@ export default function ClueInterface({ clues }: ClueInterfaceProps) {
                         clueNumber={clue.clueNumber}
                         clueCode={clue.clueCode}
                         hint={clue.hint}
+                        documentation={clue.documentation}
                         onStatusChange={handleClueStatusChange}
                       />
                     </div>

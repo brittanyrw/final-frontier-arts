@@ -1,11 +1,83 @@
+/* CSS Reset and Base Styles */
 :root {
-  --black: #000000;
+  --primary: #CF3B21;
+  --secondary: #4A7B3F;
+  --tertiary: #2B5F9D;
+  --background: #2C2C2C;
+  --surface: #D4CFC5;
+  --surface-variant: #E8E4DC;
+  --border: #B8B2A7;
+  --text: #2C2C2C;
+  --text-secondary: #9C9487;
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 body {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--background);
 }
 
 a {
+  color: inherit;
   text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* Utility Classes */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Common Animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus Styles */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }

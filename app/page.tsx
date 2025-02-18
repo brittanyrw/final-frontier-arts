@@ -27,16 +27,17 @@ export default async function HomePage() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
             <div className={styles.heroIndicator}></div>
-            <h1 className={`${spaceMono.className} ${styles.heroTitle}`}>
-              {hero?.title}
-            </h1>
-            <p className={styles.heroSubtitle}>
-              {hero?.subtitle}
-            </p>
-            <Link href="/exhibitions" className={styles.heroButton}>
-              View Exhibitions
-              <span className="ml-2">→</span>
-            </Link>
+            <div className={styles.heroContentWrapper}>
+              <h1 className={`${spaceMono.className} ${styles.heroTitle}`}>
+                {hero?.title}
+              </h1>
+              <p className={styles.heroSubtitle}>
+                {hero?.subtitle}
+              </p>
+              <Link href="/exhibitions" className={styles.heroButton}>
+                View Exhibitions
+              </Link>
+            </div>
         </div>
         {hero?.image && (
           <div className={styles.heroImageContainer}>
@@ -108,7 +109,7 @@ export default async function HomePage() {
         <div className={styles.archiveContainer}>
           <div className={styles.archiveHeader}>
             <span className={`${styles.statusIndicator} ${styles.warning}`}></span>
-            <span className={styles.archiveStatus}>EXHIBITION ARCHIVE STATUS: ACTIVE</span>
+            <span className={styles.archiveStatus}>EXHIBITION ARCHIVE STATUS: ALL</span>
           </div>
           
           <div className={styles.archiveGrid}>

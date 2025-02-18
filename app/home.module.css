@@ -2,6 +2,8 @@
   font-size: 1.875rem;
   color: #2C2C2C;
   font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .statusIndicator {
@@ -72,6 +74,7 @@
   border: 1px solid #B8B2A7;
   padding: 2rem;
   order: 2;
+  font-size: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -119,7 +122,7 @@
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  background-color: #9C9487;
+  background-color: #605b55;
   color: white;
   font-family: monospace;
   border: 1px solid #B8B2A7;
@@ -161,19 +164,20 @@
 }
 
 .heroContent {
-  max-width: 48rem;
+  max-width: 1000px;
   position: relative;
   z-index: 10;
-  padding: 6rem 1rem;
+  padding: 8rem 1rem 6rem 4rem;
+  display: flex;
 }
 
 .heroIndicator {
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  margin-top: 20px;
+  margin-right: 30px;
+  width: 40px;
+  height: 24px;
   background-color: #CF3B21;
   border-radius: 50%;
-  margin-bottom: 1.5rem;
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
@@ -196,16 +200,18 @@
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  background-color: #9C9487;
+  background-color: #CF3B21;
   color: white;
+  font-size: 1.2rem;
   font-family: monospace;
-  font-weight: 700;
-  border: 1px solid #B8B2A7;
+  font-weight: bold;
+  border: 2px solid #2C2C2C;
   transition: background-color 0.3s ease;
+  text-transform: uppercase;
 }
 
 .heroButton:hover {
-  background-color: #847D73;
+  background-color: #2C2C2C;
 }
 
 .heroImageContainer {
@@ -296,6 +302,7 @@
   font-size: 0.875rem;
   color: #CF3B21;
   margin-bottom: 0.75rem;
+  text-transform: uppercase;
 }
 
 .missionName {
@@ -307,7 +314,7 @@
 
 .commander {
   font-family: monospace;
-  color: #9C9487;
+  color: #605b55;
   margin-bottom: 1rem;
 }
 
@@ -351,7 +358,8 @@
 
 .archiveStatus {
   font-family: monospace;
-  color: #9C9487;
+  color: white;
+  font-size: 1rem;
 }
 
 .archiveGrid {
@@ -387,7 +395,7 @@
 }
 
 .archiveStar {
-  color: #CF3B21;
+  color: #bbae1b;
 }
 
 .archiveImageContainer {
