@@ -16,6 +16,7 @@
   background-color: #D4CFC5;
   border: 1px solid #B8B2A7;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .statusIndicator {
@@ -41,7 +42,6 @@
   margin-bottom: 1.5rem;
 }
 
-/* Command Message Styles */
 .commandOverlay {
   position: fixed;
   inset: 0;
@@ -52,7 +52,7 @@
 }
 
 .container {
-  max-width: 48rem;
+  max-width: 60rem;
   margin: 0 auto;
   padding: 0 1rem;
   padding-top: 5rem;
@@ -79,6 +79,10 @@
   letter-spacing: 0.05em;
   display: flex;
   align-items: center;
+}
+
+.statusIndicator {
+  margin: 0;
 }
 
 .statusText {
@@ -114,6 +118,7 @@
   color: #2C2C2C;
   line-height: 1.625;
   font-family: monospace;
+  font-size: 1rem;
 }
 
 .sender {
@@ -148,11 +153,15 @@
 
 .cancelButton {
   border: 1px solid #9C9487;
-  color: #2C2C2C;
+  color: #9C9487;
 }
 
 .cancelButton:hover {
   background-color: rgba(156, 148, 135, 0.1);
+}
+
+.messageText ul {
+  padding-left: 20px;
 }
 
 @keyframes pulse {

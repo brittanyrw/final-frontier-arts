@@ -29,14 +29,13 @@
 
 .category {
   font-size: 0.875rem;
-  color: #9C9487;
+  color: #605b55;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .title {
   font-size: 2.25rem;
-  margin-bottom: 2rem;
   color: #2C2C2C;
   font-weight: 700;
 }
@@ -56,7 +55,7 @@
 }
 
 .deploymentDate {
-  color: #9C9487;
+  color: #605b55;
   letter-spacing: 0.05em;
 }
 
@@ -109,7 +108,7 @@
 
 .headerTitle {
   display: flex;
-  align-items: center;
+  align-items: top;
   gap: 0.75rem;
 }
 
@@ -117,6 +116,12 @@
   height: 1px;
   background-color: #B8B2A7;
   flex-grow: 1;
+}
+
+.headerTitle .statusIndicator {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 35px;
 }
 
 .artifactsGrid {

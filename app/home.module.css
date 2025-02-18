@@ -205,7 +205,6 @@
   font-size: 1.2rem;
   font-family: monospace;
   font-weight: bold;
-  border: 2px solid #2C2C2C;
   transition: background-color 0.3s ease;
   text-transform: uppercase;
 }

@@ -12,7 +12,7 @@
 
 .content {
   max-width: 64rem;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
 }
 
 .header {
@@ -46,7 +46,7 @@
 
 .subtitle {
   font-family: monospace;
-  color: #9C9487;
+  color: #605b55;
 }
 
 .grid {
@@ -69,7 +69,7 @@
 .classifiedTag {
   font-family: monospace;
   font-size: 0.875rem;
-  color: #9C9487;
+  color: #605b55;
   margin-top: 1rem;
   display: flex;
   align-items: center;

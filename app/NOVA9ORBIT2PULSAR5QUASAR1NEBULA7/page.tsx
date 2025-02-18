@@ -7,7 +7,6 @@ import styles from './masterpiece.module.css'
 
 export default function SecretMasterpiece() {
   const [isRevealed, setIsRevealed] = useState(false)
-  const [showDescription, setShowDescription] = useState(false)
 
   return (
     <main className={styles.container}>
@@ -20,8 +19,8 @@ export default function SecretMasterpiece() {
           >
             <h1 className={styles.title}>The Final Masterpiece</h1>
             <p className={styles.intro}>
-              You have proven yourself worthy of witnessing my most treasured work.
-              Are you prepared for what you&apos;re about to see?
+              You have proven yourself worthy by finding our newest treasured work.
+              Are you prepared for what you are about to see?
             </p>
             <button
               onClick={() => setIsRevealed(true)}
@@ -66,18 +65,10 @@ export default function SecretMasterpiece() {
                   transition={{ delay: 2 }}
                   className={styles.artworkDetails}
                 >
-                  <h2 className={styles.artworkTitle}>"Eternal Innocence"</h2>
-                  <p className={styles.artworkCreator}>Victor Lark&apos;s Magnum Opus, 2025</p>
-                  
-                  <button
-                    onClick={() => setShowDescription(true)}
-                    className={styles.curatorButton}
-                  >
-                    View Curator&apos;s Note
-                  </button>
+                  <h2 className={styles.artworkTitle}>"Space Cat"</h2>
+                
 
                   <AnimatePresence>
-                    {showDescription && (
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
@@ -85,21 +76,12 @@ export default function SecretMasterpiece() {
                         className={styles.description}
                       >
                         <p className={styles.descriptionText}>
-                          In this transcendent work, Lark challenges our preconceptions of fine art 
-                          through a masterful subversion of traditional artistic hierarchies. The subject, 
-                          a simple kitten, becomes a profound commentary on innocence, digital curation, 
-                          and the very nature of value in the art world.
-                        </p>
-                        <p className={styles.descriptionText}>
-                          The piece serves as both a reward and a lesson - reminding us that true 
-                          mastery lies not in the grandeur of our creations, but in our ability to 
-                          find joy and beauty in the unexpected.
+                          In this unexpected piece, Nova playfully challenges our space expectations. Like a cat that somehow wandered into Mission Control, this cosmic kitten becomes a commentary on finding the familiar among the stars.
                         </p>
                         <p className={styles.attribution}>
-                          - From the personal collection of Victor Lark
+                          - From the personal collection of Olivia Nova
                         </p>
                       </motion.div>
-                    )}
                   </AnimatePresence>
                 </motion.div>
               </div>

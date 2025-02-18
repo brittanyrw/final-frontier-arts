@@ -60,7 +60,7 @@ export default function Footer({ exhibitions }: FooterProps) {
                   className={styles.link}
                 >
                   <span>→</span>
-                  Executive DIRECTOR
+                  About the Director
                 </Link>
               </li>
             </ul>
@@ -71,19 +71,19 @@ export default function Footer({ exhibitions }: FooterProps) {
             <ul className={styles.linkList}>
               <li className={styles.systemItem}>
                 <span className={styles.systemDot}></span>
-                NEXT.JS
+                Next.js
               </li>
               <li className={styles.systemItem}>
                 <span className={styles.systemDot}></span>
-                GRAPHQL
+                GraphQL
               </li>
               <li className={styles.systemItem}>
                 <span className={styles.systemDot}></span>
-                CONTENTFUL
+                Contentful
               </li>
               <li className={styles.systemItem}>
                 <span className={styles.systemDot}></span>
-                TYPESCRIPT
+                TypeScript
               </li>
             </ul>
           </div>

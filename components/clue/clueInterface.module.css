@@ -15,6 +15,13 @@
   background-color: #D4CFC5;
   border: 1px solid #B8B2A7;
   padding: 2rem;
+  margin-top: 4rem;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .statusIndicator {
@@ -25,6 +32,7 @@
   border-radius: 50%;
   margin-bottom: 1rem;
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  margin-right: 20px;
 }
 
 .title {
@@ -91,9 +99,9 @@
 }
 
 .markerPending {
-  border-color: #B8B2A7;
+  border-color: #605b55;
   background-color: #E8E4DC;
-  color: #9C9487;
+  color: #605b55;
 }
 
 .clueContent {
@@ -301,8 +309,7 @@
   margin-right: auto;
   padding: 2rem;
   background-color: #E8E4DC;
-  border: 2px solid #CF3B21;
-  box-shadow: 0 0 15px rgba(207, 59, 33, 0.3);
+  border: 2px solid #4a7b3f;
 }
 
 .completionTitle {
@@ -345,11 +352,10 @@
 
 .completionStatus {
   margin-top: 1rem;
-  color: #9C9487;
+  color: #605b55;
   font-family: monospace;
 }
 
-/* Instructions */
 .instructions {
   margin-top: 4rem;
   text-align: center;

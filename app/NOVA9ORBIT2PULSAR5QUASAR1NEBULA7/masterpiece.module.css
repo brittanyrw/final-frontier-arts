@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background-color: black;
+  background-color: #2C2C2C;
   color: white;
   padding-top: 5rem;
 }
@@ -18,26 +18,28 @@
 
 .title {
   font-size: 3.75rem;
-  font-family: serif;
+  font-family: monospace;
   margin-bottom: 2rem;
 }
 
 .intro {
   font-size: 1.25rem;
-  color: #9ca3af;
+  color: #D4CFC5;
   margin-bottom: 3rem;
   max-width: 32rem;
   margin-left: auto;
   margin-right: auto;
+  font-family: monospace;
 }
 
 .revealButton {
   padding: 0.75rem 2rem;
-  background-color: white;
-  color: black;
-  font-family: serif;
-  font-size: 1.125rem;
-  transition: background-color 0.3s ease;
+    background-color: #D4CFC5;
+    color: #2C2C2C;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    transition: background-color 0.3sease;
 }
 
 .revealButton:hover {
@@ -63,7 +65,10 @@
 
 .artwork {
   position: relative;
-  aspect-ratio: 4/3;
+  /* aspect-ratio: 4/5; */
+  width: 345px;
+  height: 447px;
+  margin: auto;
   background-color: black;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
@@ -83,7 +88,7 @@
 }
 
 .artworkTitle {
-  font-family: serif;
+  font-family: monospace;
   font-size: 2.25rem;
   margin-bottom: 1rem;
 }
@@ -93,18 +98,10 @@
   margin-bottom: 2rem;
 }
 
-.curatorButton {
-  color: #9ca3af;
-  transition: color 0.3s ease;
-}
-
-.curatorButton:hover {
-  color: white;
-}
-
 .description {
   margin-top: 2rem;
   text-align: left;
+  font-family: monospace;
 }
 
 .descriptionText {
@@ -118,6 +115,6 @@
 
 .attribution {
   margin-top: 1rem;
-  color: #9ca3af;
+  color: white;
   font-style: italic;
 }

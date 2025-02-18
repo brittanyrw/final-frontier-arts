@@ -46,14 +46,14 @@ export default function ExhibitionContent({ exhibition }: ExhibitionContentProps
           className={styles.details}
         >
           <div className={styles.deploymentDate}>
-            DEPLOYMENT DATE: {new Date(exhibition.startDate).toLocaleDateString('en-US', { 
+            DATE: {new Date(exhibition.startDate).toLocaleDateString('en-US', { 
               month: 'long',
               day: 'numeric',
               year: 'numeric'
             })}
           </div>
           <div className={styles.missionInfo}>
-            <div className={styles.missionCommand}>EXHIBITION COMMAND</div>
+            <div className={styles.missionCommand}>ARTIST</div>
             <div className={styles.commander}>{exhibition.artist.name.toUpperCase()}</div>
           </div>
         </motion.div>

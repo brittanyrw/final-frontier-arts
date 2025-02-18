@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  color: #9C9487;
+  color: #605b55;
   font-family: monospace;
 }
 
@@ -52,6 +52,10 @@
   grid-template-columns: 1fr;
   gap: 4rem;
   align-items: start;
+}
+
+.content p {
+  font-family: monospace;
 }
 
 @media (min-width: 1024px) {
@@ -97,7 +101,7 @@
 }
 
 .artworkArtist {
-  color: #9C9487;
+  color: #605b55;
 }
 
 .reviewContent {

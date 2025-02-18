@@ -29,9 +29,20 @@ export default async function ExhibitionsPage() {
           </div>
           <div className={styles.stats}>
             <p>Accessing Deep Space Exhibition Database...</p>
-            <p>Total Exhibitions: {exhibitions?.length || 0}</p>
-            <p>Active Exhibitions: {activeExhibitions.length}</p>
-            <p>Completed Exhibitions: {completedExhibtions.length}</p>
+            <ul className={styles.statsList}>
+              <li className={styles.statsItem}>
+                <p>{exhibitions?.length || 0}</p>
+                <p>Total Exhibitions</p>
+                </li>
+              <li className={styles.statsItem}>
+                <p>{activeExhibitions.length}</p>
+                <p>Active Exhibitions</p> 
+                </li>
+              <li className={styles.statsItem}>
+                <p>{completedExhibtions.length}</p>
+                <p>Completed Exhibitions</p> 
+              </li>
+            </ul>
           </div>
         </div>
 

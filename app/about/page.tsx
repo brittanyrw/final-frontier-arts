@@ -43,7 +43,7 @@ export default async function AboutPage() {
               </h1>
             </div>
             <div className={styles.subtitle}>
-              PERSONNEL FILE: {bio?.name || 'Victor Lark'}
+              EXECUTIVE DIRECTOR: {bio?.name || 'Olivia Nova'}
             </div>
           </div>
           

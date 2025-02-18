@@ -13,7 +13,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 3rem;
+  gap: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -47,12 +47,13 @@
   font-size: 1.25rem;
   color: #2C2C2C;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .systemStatus {
   font-family: monospace;
   font-size: 0.875rem;
-  color: #9C9487;
+  color: #605b55;
   margin-top: 1rem;
 }
 
@@ -75,7 +76,7 @@
 .linkItem {
   font-family: monospace;
   font-size: 0.875rem;
-  color: #9C9487;
+  color: #605b55;
 }
 
 .link {
@@ -95,12 +96,15 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: #605b55;
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 .systemDot::before {
   content: '✦';
   color: #4A7B3F;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .bottomSection {
@@ -115,7 +119,7 @@
   gap: 2rem 0.5rem;
   font-family: monospace;
   font-size: 0.875rem;
-  color: #9C9487;
+  color: #605b55;
 }
 
 .systemId {

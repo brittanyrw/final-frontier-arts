@@ -71,6 +71,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  text-transform: uppercase;
 }
 
 .grid {
@@ -179,7 +180,7 @@
 .timeline {
   font-family: monospace;
   font-size: 0.875rem;
-  color: #9C9487;
+  color: #605b55;
 }
 
 .cardFooter {
@@ -210,6 +211,27 @@
 
 .card:hover .accessLink {
   transform: translateX(0.5rem);
+}
+
+.statsList {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.statsItem {
+  text-align: center;
+  border: 2px solid;
+  padding: .5rem;
+  margin-right: 20px;
+}
+
+.statsItem p:first-child {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 @keyframes pulse {

@@ -131,14 +131,16 @@ export default function ClueInterface({ clues }: ClueInterfaceProps) {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.header}>
-          <div className={styles.statusIndicator}></div>
-          <h1 className={`${spaceMono.className} ${styles.title}`}>
-            MISSION OBJECTIVES
-          </h1>
+          <div className={styles.headerWrapper}>
+            <div className={styles.statusIndicator}></div>
+            <h1 className={`${spaceMono.className} ${styles.title}`}>
+              MISSION OBJECTIVES
+            </h1>
+          </div>
           <p className={styles.subtitle}>
             DECODE SEQUENCE MARKERS TO ACCESS SECURE ARTWORK DATA
           </p>
-          <p>Remember, follow the clues. Each clue will give you a code and the next clue. Enter the codes below to confirm that you are on the right track.</p>
+          <p className={styles.subtitle}>Each clue will give you a code and the next clue. Enter the codes below to confirm that you are on the right track.</p>
         </div>
 
         <div className={styles.timelineContainer}>

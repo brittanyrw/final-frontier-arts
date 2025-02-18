@@ -58,7 +58,7 @@ const CommandMessage = ({ onClose }: { onClose: () => void }) => {
               >
                 <div className={styles.sender}>
                   <span>&#9654;</span>
-                  <p>FROM: EXECUIVE DIRECTOR LARK</p>
+                  <p>FROM: EXECUIVE DIRECTOR NOVA</p>
                 </div>
 
                 <p>ATTENTION CREW</p>
