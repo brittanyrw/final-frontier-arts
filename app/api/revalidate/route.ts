@@ -12,6 +12,7 @@ export async function POST(request: NextRequest) {
   revalidateTag("posts");
   revalidateTag("criticReview");
   revalidateTag("exhibition");
+  revalidateTag("topSecretDoNotLook");
 
   return NextResponse.json({ revalidated: true, now: Date.now() });
 }
