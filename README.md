@@ -5,7 +5,7 @@ A demo Contentful project
 
 ### [https://final-frontier-arts.vercel.app/](https://final-frontier-arts.vercel.app/)
 
-![homepage screenshot](/lib/homepage.png)
+![homepage screenshot](/readme/homepage.png)
 
 ## About the Project
 
@@ -46,7 +46,7 @@ Zapier that is triggered on entry publishing sends the clue to a Google doc.
 #### Contentful Apps
 4 Custom apps were created, 2 Marketplace apps were used.
 
-![apps screenshot](/lib/apps.png)
+![apps screenshot](/readme/apps.png)
 
 * *Exhibition Checker:* One clue requires the user to re-order a reference field. This app checks that the user did that correctly.
 * *Sidebar Decoder:* One clue requires the user to find a specific code, and enter it into a sidebar app to check if it is valid.
@@ -59,8 +59,18 @@ Zapier that is triggered on entry publishing sends the clue to a Google doc.
 The user will go through 5 different clues, each clue unlocking the next clue and providing a code. At the end, the final code will lead the user to the missing art piece. 
 
 ### Examples of the Game
+Presentation and Demo Video
+
+![game screenshot](/readme/demo.png)
+
+
+* [Slides](https://docs.google.com/presentation/d/1zD2WfaYYwDaypVuLgWVtJ94HOFnKkmnOu34gjuv_vaU/edit?usp=sharing)
+
+* [Youtube Demo Link](https://youtu.be/7nFStze8tB4)
+
 
 Game Start
-![game screenshot](/lib/game-start.png)
+![game screenshot](/readme/game-start.png)
+
 Game Clue
-![clue screenshot](/lib/game-clue.png)
+![clue screenshot](/readme/game-clue.png)
